@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head>
+    <title>test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</head>
+<link href="style.css">
+<body>
+<h2>Количество вакансий по програмированию!</h2>
+<p th:text = "'Количество Вакансий ' + ${title}"></p>
+<form action="/post" method="post">
+    <p>Выберете город</p>
+    <select name = "sity">
+        <option>NSK</option>
+        <option>MSK</option>
+        <option>SP</option>
+    </select>
+    <p>Выберете зарплату в тысячах рублей</p>
+    <select name = "zp">
+        <option>20</option>
+        <option>40</option>
+        <option>60</option>
+        <option>80</option>
+        <option>100</option>
+        <option>120</option>
+        <option>140</option>
+        <option>160</option>
+        <option>180</option>
+        <option>200</option>
+    </select>
+    <br><br>
+    <button>Отправить форму</button>
+</form>
+</body>
+</html>
